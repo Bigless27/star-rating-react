@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -13,25 +17,35 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  background-color: rgb(244, 236, 244);
 }
 
-.App-link {
-  color: #61dafb;
+.star-rating-filled {
+  fill: gold;
+}
+
+.star-rating-blank {
+  fill: #d8d8d8;
+}
+
+.logo {
+  background-image: url('./loc-logo.png');
+  height: 70px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.flex-container {
+  display: flex;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
