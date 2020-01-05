@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from "./logo.svg";
 
 const Star = ({ starId, rating, onMouseEnter, onMouseLeave, onClick }) => {
   let styleClass = "star-rating-blank";
-  if (rating >= starId) {
+  if (rating && rating >= starId) {
     styleClass = "star-rating-filled";
   }
 
